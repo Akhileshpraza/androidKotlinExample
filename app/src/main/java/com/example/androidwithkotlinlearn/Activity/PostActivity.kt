@@ -1,10 +1,12 @@
-package com.example.androidwithkotlinlearn
+package com.example.androidwithkotlinlearn.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 
-import androidx.annotation.RequiresPermission
+import com.example.androidwithkotlinlearn.R
+import com.example.androidwithkotlinlearn.RetrofitInterface
+import com.example.androidwithkotlinlearn.Modals.postModal
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

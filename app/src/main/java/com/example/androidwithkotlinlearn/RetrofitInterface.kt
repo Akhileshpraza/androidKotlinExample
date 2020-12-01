@@ -1,6 +1,7 @@
 package com.example.androidwithkotlinlearn
 
-import okhttp3.internal.Util
+import com.example.androidwithkotlinlearn.Modals.Modal
+import com.example.androidwithkotlinlearn.Modals.postModal
 import retrofit2.Call
 import retrofit2.http.*
 

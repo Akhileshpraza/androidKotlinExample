@@ -1,4 +1,4 @@
-package com.example.androidwithkotlinlearn
+package com.example.androidwithkotlinlearn.Modals
 
 class Modal {
     var userId =0

@@ -1,10 +1,13 @@
-package com.example.androidwithkotlinlearn
+package com.example.androidwithkotlinlearn.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.Toast
+import com.example.androidwithkotlinlearn.Modals.Modal
+import com.example.androidwithkotlinlearn.R
+import com.example.androidwithkotlinlearn.RetrofitInterface
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
