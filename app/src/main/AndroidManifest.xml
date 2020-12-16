@@ -4,6 +4,16 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,17 +22,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidWithKotlinLearn"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Activity.FragmentActivity">
+        <activity android:name=".Javatpoint_Example.TextView_and_EditTextActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activity.ImageViewsActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.androidwithkotlinlearn"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".Activity.ClickPhotoOnCameraToSaveFlowerActivity"/>
+
+        <activity android:name=".Activity.FragmentActivity" />
         <activity android:name=".Activity.ProfileActivity" />
         <activity android:name=".Activity.LoginActivity" />
-        <activity android:name=".Activity.SignupActivity"/>
-
+        <activity android:name=".Activity.SignupActivity" />
         <activity android:name=".Activity.PostActivity" />
         <activity android:name=".Activity.MainActivity" />
     </application>
